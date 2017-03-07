@@ -1,0 +1,515 @@
+@font-face {
+    font-family: 'museo300';
+    src: url('../fonts/Museo300-Regular-webfont.eot');
+    src: url('../fonts/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Museo300-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Museo300-Regular-webfont.woff') format('woff'),
+         url('../fonts/Museo300-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Museo300-Regular-webfont.svg#museo300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html {
+    font-family: 'museo300', sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+    font-family: 'museo300';
+    font-size: 16px;
+    height: auto!important;
+    overflow-y: auto!important;
+}
+
+@media print {
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+    color: #d83454;
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+    outline:none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+    margin-bottom: 0;
+}
+
+button{
+	border: none;
+	outline: none;
+}
+.clear {
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+}
+
+#main_wrapper {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	position:relative;
+    background: #fff;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+section {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    display: table;
+    margin: 0;
+    max-width: none;
+    background-color: #f1f2f2;
+    height: 100vh;
+    color: #414042;
+    text-align: center;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bg-cerise-red{
+    background: #D83454;
+    color: #fff
+}
+.bg-white{
+    background: #FFFFFF;
+    color: #414042
+}
+.content-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5% 0%;
+    padding: 10vh 0vh;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    font-weight: normal;
+}
+h1 {
+    font-size: 3em;
+    line-height: 1;
+}
+h2 {
+    font-size: 5em;
+    line-height: 1;
+}
+h3{
+    font-size: 2em;
+    line-height: 1.3;
+}
+h4{
+    font-size: 1.5em;
+    line-height: 1.3;
+}
+
+.marginB10v{
+    margin-bottom: 10vh;
+}
+.color-red{
+    color: #d83454;
+}
+.fa.down_icon {
+    position: absolute;
+    bottom: 6vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;    
+    line-height: 45px;
+    font-size: 33px;
+    cursor: pointer;
+}
+.down_icon.white{
+    color: #fff;
+    border: 3px solid #fff;
+    background: #d83454;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.10);
+}
+.down_icon.black{
+    color: #414042;
+    border: 3px solid #414042;
+}
+.transparent.down_icon{
+    box-shadow: none;
+}
+.VATop{
+    vertical-align: top;
+}
+.services .title{
+    margin-bottom: 18vh;
+}
+.clients .title{
+    margin-bottom: 24vh;
+}
+.findus .title{
+    margin-bottom: 10vh;
+}
+.contact .title{
+    margin-bottom: 10vh;
+}
+.round-box{
+    display: inline-block;
+    width: 24%;
+}
+.round-box label{
+    display: block;
+    font-size: 1.4em;
+}
+.services-icon{
+    display: inline-block;
+    background: #d83454;
+    padding: 45px;
+    border-radius: 100%;
+    margin-bottom: 50px;
+}
+.ClientsSlideOuter{
+    display: inline-block;
+    width: 90%;
+}
+.ClientsSlide.owl-carousel{
+    
+    
+}
+.ClientsSlide .item{
+    display: inline-block;
+    width: 30%;
+}
+.ClientsSlide .owl-controls .owl-nav .owl-prev, .ClientsSlide .owl-controls .owl-nav .owl-next{
+    position: absolute;
+    font-size: 1.9em;
+    color: #5e6b6e;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px;
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+.ClientsSlide .owl-controls .owl-nav .owl-prev:hover, .ClientsSlide .owl-controls .owl-nav .owl-next:hover{
+    opacity: 1;
+}
+.ClientsSlide .owl-controls .owl-nav .owl-prev{
+    right: 100%;
+}
+.ClientsSlide .owl-controls .owl-nav .owl-next{
+    left: 100%;
+}
+.map{
+    height: 50vh;
+}
+.ContactForm{
+    width: 500px;
+    display: inline-block;
+}
+.ContactForm .input{
+    width: 100%;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 2px solid #cccccc;
+    padding: 15px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    outline: 0px;
+    color: #414042;
+    font-family: 'museo300', sans-serif;
+}
+.ContactForm textarea.input{
+    height: 20vh;
+}
+.ContactForm .button{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    outline: 0px;
+    background: #d83454;
+    color: #fff;
+    font-family: 'museo300', sans-serif;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+input:-moz-placeholder, textarea:-moz-placeholder, input::-moz-placeholder, textarea::-moz-placeholder {  
+    opacity:1;
+    color: #414042; 
+}  
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {  
+    opacity:1;
+    color: #414042;
+}
+input::-o-input-placeholder, textarea::-o-input-placeholder {  
+    opacity:1;
+    color: #414042;
+} 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {  
+    opacity:1;
+    color: #414042;
+}
+.contact h4 a{
+    color: #414042;
+}
+#MapContent p{
+    text-align: left;
+    font-size: 15px;
+}
+.responsice-show{
+    display: none;
+}
+
+@media (min-width: 768px){
+    .container {
+        width: 400px;
+    }
+}
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+@media (max-width: 768px){
+    h2 {
+        font-size: 3em;
+        line-height: 1;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h4 br{
+        display: none;
+    }
+    .logo{
+        width: 260px;
+    }
+    .marginB10v {
+        margin-bottom: 8vh;
+    }
+    .content-cell{
+        padding: 8vh 0vh;
+    }
+    .services .title {
+        margin-bottom: 5vh;
+    }
+    
+    .ServicesBox{
+        text-align: left;
+    }
+    .round-box{
+        width: 100%;
+    }
+    .services-icon{
+        padding: 34px;
+        margin: 20px 15px 20px 0px;
+    }
+    .services-icon img{
+        width: 60px;
+    }
+    .round-box label{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 20px;
+    }
+    .ClientsSlide .item{
+        width: 100%;
+        margin: 6vh 0vh;
+    }
+    .ClientsSlide .owl-controls .owl-nav .owl-prev {
+        right: 95%;
+    }
+    .ClientsSlide .owl-controls .owl-nav .owl-next {
+        left: 95%;
+    }
+    .clients .title, .findus .title, .contact .title {
+        margin-bottom: 5vh;
+    }
+    .map {
+        height: 65vh;
+    }
+    .ContactForm{
+        width: 100%;
+    }
+    .ContactForm textarea.input {
+        height: 44vh;
+    }
+    .responsice-hide{
+        display: none;
+    }
+    .responsice-show{
+        display: block;
+    }
+    .ContactForm .info-box{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .info-box a{
+        display: inline-block;
+        margin-bottom: 5px;
+        color: #414042;
+    }
+    .info-box .fa{
+        margin-right: 3px;
+    }
+}
+@media (max-width: 767px){
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 23px;
+    }
+    .logo {
+        width: 100%;
+    }
+    .container {
+        width: 294px;
+    }
+    .services-icon {
+        padding: 20px;
+    }
+    .services-icon img {
+        width: 43px;
+    }
+    .round-box label{
+        font-size: 17px;
+    }
+    .services .title {
+        margin-bottom: 3vh;
+    }
+    .ClientsSlide .item {
+        margin: 5vh 0vh;
+    }
+    .findus .title, .contact .title {
+        margin-bottom: 7vh;
+    }    
+    .ClientsSlide img {
+        width: 185px;
+        height: auto;
+    }
+    .map {
+        height: 58vh;
+    }
+    .ContactForm textarea.input {
+        height: 30vh;
+    }
+    .ClientsSlide .owl-dots{
+        display: block;
+        text-align: center;
+    }
+    .ClientsSlide .owl-dots .owl-dot{
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        background: #a7aeb0;
+        border-radius: 100%;
+        margin: 0px 4px;
+    }
+    .ClientsSlide .owl-dots .owl-dot.active{
+        background: #5e6b6e;
+    }
+    .ClientsSlide .owl-controls .owl-nav{
+        display: none;
+    }
+}
+@media (max-width: 375px){
+    .services-icon {
+        margin: 1.5vh 10px 1.5vh 0px;
+    }
+    .ClientsSlide .item {
+        margin: 4vh 0vh;
+    }
+    .contact .title {
+        margin-bottom: 5vh;
+    }
+}
+@media (max-width: 320px){
+    .clients .title{
+        margin-bottom: 3vh;
+    }
+    .ClientsSlide img {
+        width: 140px;
+    }
+    .services-icon img {
+        width: 35px;
+    }
+    .contact .title{
+        margin-bottom: 5vh;
+    }
+    .ContactForm .input{
+        padding: 10px;
+    }
+    .ContactForm .info-box {
+        margin-top: 0px;
+    }
+    .ContactForm textarea.input {
+        height: 21vh;
+    }
+}

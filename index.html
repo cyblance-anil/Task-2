@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Geek Label</title>
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" a href="css/style.css" type="text/css" />
+    <link rel="stylesheet" a href="css/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" a href="css/owl.theme.css"/>
+    <link rel="stylesheet" a href="css/owl.carousel.css"/>    
+</head>
+<body>
+	<section id="intro" class="bg-cerise-red">  
+        <div class="content-cell">
+            <div class="container">
+                <img class="logo marginB10v" src="images/logo.png">
+                <h4>A team of self confessed geeks who are all about <br> great digital design</h4>
+            </div>
+        </div>
+        <i onclick="navScroll('#design')" class="fa fa-angle-down white down_icon"></i>
+    </section>
+
+    <section id="design">  
+        <div class="content-cell">
+            <div class="container">
+                <img class="marginB10v" src="images/man.png">
+                <h3>Some agencies love <span class="color-red">design</span>, but don’t know how to build</h3>
+            </div>
+        </div>
+        <i onclick="navScroll('#build')" class="fa fa-angle-down white down_icon"></i>
+    </section>
+
+    <section id="build">  
+        <div class="content-cell">
+            <div class="container">
+                <img class="marginB10v" src="images/Questionmarks.png">
+                <h3>Some agencies know how to <span class="color-red">build</span> but can’t do design</h3>
+            </div>
+        </div>
+        <i onclick="navScroll('#both')" class="fa fa-angle-down white down_icon"></i>
+    </section>
+    
+    <section id="both">  
+        <div class="content-cell">
+            <div class="container">
+                <img class="marginB10v" src="images/BulbSparks.png">
+                <h3>We love <span class="color-red">both</span></h3>
+            </div>
+        </div>
+        <i onclick="navScroll('#services')" class="fa fa-angle-down white down_icon"></i>
+    </section>
+
+    <section id="services" class="services bg-white">  
+        <div class="content-cell VATop">
+            <div class="container">
+                <h2 class="title">Services</h2>
+                <div class="ServicesBox">
+                    <div class="round-box">
+                        <div class="services-icon">
+                            <img src="images/web.png">
+                        </div>
+                        <label>Web Development</label>
+                    </div>
+                    <div class="round-box">
+                        <div class="services-icon">
+                            <img src="images/paint.png">
+                        </div>
+                        <label>Design</label>
+                    </div>
+                    <div class="round-box">
+                        <div class="services-icon">
+                            <img src="images/aa.png">
+                        </div>
+                        <label>Branding</label>
+                    </div>
+                    <div class="round-box">
+                        <div class="services-icon">
+                            <img src="images/ux.png">
+                        </div>
+                        <label>UX Research</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i onclick="navScroll('#clients')" class="fa fa-angle-down black down_icon"></i>
+    </section>
+    
+    <section id="clients" class="clients">  
+        <div class="content-cell VATop">
+            <h2 class="title">Clients</h2>
+            <div class="ClientsSlideOuter">
+                <div id="ClientsSlide" class="ClientsSlide">
+                    <div>
+                        <div class="item"><img src="images/tpg-logo-b.png"></div>
+                        <div class="item"><img src="images/VeganLogo.png"></div>
+                        <div class="item"><img src="images/PSHELogo.png"></div>
+                    </div>
+                    <div>
+                        <div class="item"><img src="images/tpg-logo-b.png"></div>
+                        <div class="item"><img src="images/VeganLogo.png"></div>
+                        <div class="item"><img src="images/PSHELogo.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i onclick="navScroll('#findus')" class="fa fa-angle-down black down_icon"></i>
+    </section>
+    
+    <section id="findus" class="findus">  
+        <div class="content-cell VATop">
+            <h2 class="title responsice-hide">How to find us</h2>
+            <h2 class="title responsice-show">Find us</h2>
+            <div id="map" class="map"></div>
+        </div>
+        <i onclick="navScroll('#contact')" class="fa fa-angle-down white down_icon"></i>
+    </section>
+    
+    <section id="contact" class="contact">  
+        <div class="content-cell VATop">
+            <div class="container">
+                <h2 class="title">Contact</h2>
+                <div id="rspncMsg"></div>
+                <form id="ContactForm" class="ContactForm">
+                    <input type="text" name="name" class="input" placeholder="Name*">
+                    <input type="email" name="email" class="input" placeholder="Email*">
+                    <textarea class="input" name="message" placeholder="Message"></textarea>
+                    <input type="button" id="inquiryBtn" value="Send Message!" class="button">
+                    <h4 class="responsice-hide">Or phone on: <a href="tel:01923 220121">01923 220121</a></h4>
+                    <div class="responsice-show info-box">
+                        <a href="tel:01923 220121"><i class="fa fa-phone"></i> 01923 220121</a><br>
+                        <a href="mailto:info@compucorp.co.uk"><i class="fa fa-envelope-o"></i> info@compucorp.co.uk</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3QVJJoxwOTUQjsMxllZuuznntFRLNJ5A&callback=initMap"
+    async defer></script>
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $( "#inquiryBtn" ).click(function() {
+            //function send_mail(){
+                $.ajax({
+                    url: 'mail.php',
+                    data: $('form#ContactForm').serialize(),
+                    type: 'POST',
+                    success: function (msg) {
+                        if(msg==1){
+                            var str = '<div style="color: green; font-size: 18px;font-family: brandon_grotesque_regularRg;">Thank you. We will contact you soon.</div>';
+                            $('#rspncMsg').html(str);
+                            $('#ContactForm')[0].reset();
+                        }else{
+                           $('#rspncMsg').html(msg);
+                        }
+                    }
+                });
+            //}
+            });
+        });
+    </script>
+</body>
+</html>
